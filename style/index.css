@@ -83,10 +83,32 @@ nav a:hover {
     align-items: center;
     flex-flow: column;
 }
+.hero-content form {
+    /* padding: 5%; */
+    /* width: 100%; */
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: column;
+}
+
+.hero-content label {
+    font-size: 4rem;
+    margin: 3%;
+}
+.hero-content input {
+    font-size: 4rem;
+    margin: 3%;
+}
+
 
 
 .hero-content h2 {
     font-size: 10rem;
+}
+
+.hero-content p {
+    font-size: 5rem;
 }
 .hero-content button {
     font-size: 4rem;
@@ -113,21 +135,50 @@ nav a:hover {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
+    background-color: lightblue;
+    color: navy;
 }
 
 .project {
     width: 30%;
     margin: 1%;
     height: 30vh;
-    border: 
+    border: 1px solid navy;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-flow: column;
+    font-size: 2rem;
+    background-color: gray;
+    color: lightblue;
+}
+
+hr {
+    width: 100%;
 }
 
 footer {
     width: 100%;
     padding: 1%;
     border-top: 4px solid navy;
+    background-color: dodgerblue;
 }
 
 footer button {
     font-size: 2rem;
+    border: 4px solid dodgerblue;
+    border-radius: 1rem;
+    padding: 1rem;
+    color: navy;
+    background-color: lightblue;
+    box-shadow: 0 0 10px 1px lightgray;
+    transition: .5s;
+}
+
+footer button:hover {
+    color: lightblue;
+    background-color: navy;
+    transition: .5s;
+
 }
