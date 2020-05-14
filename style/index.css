@@ -36,11 +36,12 @@ header {
 }
 
 nav {
-    width: 40%;
+    width: 50%;
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-size: 2rem;
+    margin-left: 2%;
 }
 
 nav a {
@@ -142,7 +143,7 @@ nav a:hover {
 .project {
     width: 30%;
     margin: 1%;
-    height: 30vh;
+    height: 40vh;
     border: 1px solid navy;
     border-radius: 1rem;
     display: flex;
@@ -181,4 +182,49 @@ footer button:hover {
     background-color: navy;
     transition: .5s;
 
+}
+
+@media(max-width: 1200px) {
+    header {
+      display: flex;
+      flex-direction: column-reverse;
+      margin: 0;
+      padding: 0;
+      padding-top: 2rem;
+      justify-content: center;
+      align-items: center;
+    }
+    nav {
+        width: 90%;
+    }
+    .project {
+        width: 45%;
+
+    }
+    .name {
+        font-size: 3rem;
+    }
+  
+}
+@media(max-width: 900px) {
+    .project {
+        height: 55vh;
+    }
+    .hero-content h2 {
+        font-size: 7rem;
+    }
+  
+}
+
+@media(max-width: 700px) {
+    .project {
+        width: 95%;
+        height: 45vh;
+    }
+    .hero-content h2 {
+        font-size: 5rem;
+    }
+    nav {
+        font-size: 1rem;
+    }
 }
